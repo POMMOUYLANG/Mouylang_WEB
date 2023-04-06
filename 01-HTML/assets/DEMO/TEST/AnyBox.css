@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+h1{
+    color:yellow;
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+.flexbox-contain{
+    background-color: yellow;
+    display:flex;
+    /* height:800px; */
+            /* Justify-Content == Design of ROW */
+    /* justify-content:center; */
+    /* justify-content:flex-start; */
+    /* justify-content:flex-end; */
+    /* justify-content:space-around; */
+    /* justify-content:space-between; */
+            /* Flex-Wrap ==  */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+            /* Flex-Flow */
+    /* flex-flow: row wrap; */
+            /* Flex-Direction ==  */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+            /* Align-Items == Design of Column To Sample With height:200px*/
+    /* height:200px; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items:flex-end; */
+    /* align-items:stretch; */
+    /* align-items: baseline; */
+            /* Align-Content == Design of Column With height:600px*/
+    /* height:600px; */
+    /* align-content:center; */
+    /* align-content:flex-start; */
+    /* align-content:flex-end; */
+    /* align-content:space-around; */
+    /* align-content:space-between; */
+    /* align-content:stretch; */
+            /* Perfexr Centering */
+    /* display:flex height justify-content:center align-items:center; */
+            /* Flex Items */
+    /*  order:number; 
+        flex-grow:number;
+        flex-shrink:number;
+        flex-basis:number px;
+    */
+    /* align-self: center; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+}
+.flexbox-item{
+    width:200px;
+    margin:10px;
+    border:3px solid black;
+    background-color: white;
+}
+.flexbox1{
+    min-height: 100px;
+    flex-shrink: 0;
+    align-self: self-end;
+    order: 3;
+}
+.flexbox2{
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: center;
+    order: 1;
+}
+.flexbox3{
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 2;
+}

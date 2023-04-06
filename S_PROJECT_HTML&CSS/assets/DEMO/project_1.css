@@ -1,0 +1,21 @@
+.banner{
+    background-color: pink;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    padding:100px 0;
+}
+#smaller-gritty{
+    height: 100px;
+    width:100px;
+}
+#gritter{
+    color:pink;
+    font-size: 100px;
+}
+.bold{
+    font-weight: 900;
+}
+ul li{
+    list-style-type: none;
+}

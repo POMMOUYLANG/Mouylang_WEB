@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+/* Font: Hanuman */
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.menu1{
+    width:800px; /* height:800px; */
+    overflow: hidden;
+    background-color:red;
+    margin: auto;
+}
+.menu1 ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu1 ul li {
+    float: left;
+}
+.menu1 ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding:10px 30px;
+    font-size: 20px;
+    font-family: 'Hanuman', serif;
+    user-select: none;
+}
+.menu1 ul li a:hover{
+    background-color: blue;
+} 
+.menu1 .active{
+    background-color: gray;
+}
+.menu2{
+    width:250px;
+    height:500px;
+    background-color: red;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+.menu ul li{
+    width:100%;
+    list-style: none;
+    padding:5px 0px;
+}
+.menu2 ul li a{  
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Hanuman', serif;
+    text-align: center;    
+    user-select: none;
+}
+.menu2 ul li a:hover{
+    background-color: blue;
+}
+.menu2 .active{
+    background-color: gray;
+}
+   
