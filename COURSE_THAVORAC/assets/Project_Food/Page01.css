@@ -1,0 +1,98 @@
+body{
+    background-color: white;
+}
+#container{
+    width:900px;
+    background-color: white;
+    margin: auto;
+}
+#section-title{
+    display:flex;
+    justify-content: space-between;
+}
+#menu-list{
+    display:flex;
+    gap: 16px;
+    font-size: 24px;
+}
+.title{
+    font-size: 32px;;
+}
+.menu-items.active{
+    color:blue;
+    text-decoration: underline double;
+}
+#section-detail img{
+    border: 5px solid black;
+    padding: 10px;
+    margin-top: 80px;
+}
+#section-detail{
+    display:flex;
+}
+.right{
+    margin-top: 52px;
+    margin-left: 20px;
+}
+.right h3 b{
+    font-size: 32px;
+}
+p{
+    font-size: 20px;
+}
+b{
+    font-size: 24px;
+}
+.recipes{
+    font-size: 32px;
+}
+#line1 img{
+    border: 5px solid black;
+    padding:10px 8px 25px 8px;
+}
+#line1{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#line2 img{
+    border: 5px solid black;
+    padding:10px 8px 25px 8px;
+}
+#line2{
+    display:flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+
+
+
+
+
+
+
+
+
+/* #line1{
+    display:flex;
+}
+.card{
+    height:230px;
+    margin:30px;
+    overflow:hidden;
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius: 3px;
+}
+.intro{
+    height:50px;
+    width:200px;
+    padding:6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:100px;
+    background-color: rgb(27, 27, 27, .5);
+    color:white;
+} */
