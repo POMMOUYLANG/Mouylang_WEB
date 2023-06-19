@@ -1,0 +1,26 @@
+#container{
+    width: 1250px;
+    height: 260px;
+    background-color: gainsboro;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.column_box{
+    width: 300px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box{
+    width: 300px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

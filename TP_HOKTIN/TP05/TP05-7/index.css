@@ -1,0 +1,12 @@
+#container{
+    width: 800px;
+    height: 700px;
+    padding: 30px;
+    background-color: palevioletred;
+}
+.content{
+    width: 800px;
+    height: 700px;
+    width: clamp(300px, 100%, 800px);
+    background-color: yellow;
+}

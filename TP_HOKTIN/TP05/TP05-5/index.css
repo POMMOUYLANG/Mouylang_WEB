@@ -1,0 +1,20 @@
+.column_box{
+    width: 1010px;
+    height: 400px;
+    background-color: gainsboro;
+    margin: auto;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: 340px 340px 200px;
+    grid-auto-rows: 80px;
+}
+.box{
+    width: 330px;
+    height: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 178, 170, 1);
+    border-radius: 10px;
+    font-size: 35px;
+}

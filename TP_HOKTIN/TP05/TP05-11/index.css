@@ -1,0 +1,33 @@
+#container{
+    width: 900px;
+    height: 650px;
+    border: 4px solid black;
+    margin: auto;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.header{
+    width: 900px;
+    height: 80px;
+    background-color: pink;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 900px;
+    height:560px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(10, 220px);
+    grid-template-rows: repeat(2, 280px);
+}
+.box1{
+    width: 200px;
+    height: 220px;
+    background-color: green;
+}
