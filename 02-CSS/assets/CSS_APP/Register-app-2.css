@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+:root{
+    --Text-color:rgb(255,0,200);
+    --Text-color--placeholder:rgb(255,0,200,.7);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    color:white;
+
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 14%; */
+    
+}
+
+form{
+    width:300px;
+}
+
+fieldset{
+    width:100%;    
+    padding: 1rem;
+    border-radius: 3px;
+    border:2px solid aqua;
+    box-shadow: 0 0 20px aqua,
+            inset 0 0 20px aqua;
+}
+
+fieldset legend{
+    text-align: center;
+    font-size: 1.5rem;
+    color:var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color);
+}
+
+fieldset label{
+    color:var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color);
+}
+
+fieldset input{
+    width:100%;
+}
+
+fieldset input[type="text"],input[type="tel"],input[type="email"],input[type="password"],select{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f8c077;
+    background: transparent;
+    color:var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color);
+}
+select{
+    font-family: 'Koulen', cursive;
+    font-size:1rem;
+}
+select option{
+    color:black;
+}
+select::-webkit-scrollbar{
+    width:3px;
+}
+select::-webkit-scrollbar-track{
+    background-color: black;
+}
+select::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 3px;
+}
+
+fieldset input[type="text"]::placeholder,input[type="tel"]::placeholder,input[type="email"]::placeholder,input[type="password"]::placeholder{
+    color:var(--Text-color--placeholder);
+    text-shadow: 0 0 20px var(--Text-color--placeholder);
+}
+
+fieldset input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+    border-bottom: 2px solid aqua;
+    box-shadow: 0 15px 10px -10px aqua;
+}
+
+fieldset a{
+    color:var(--Text-color);
+    text-shadow: 0 0 10px var(--Text-color);
+}
+
+fieldset input[type="submit"]{
+    cursor: pointer;
+    background-color: aqua;
+    color:black;
+    font-size: 1.5rem;
+    border:none;
+    outline: none;
+    box-shadow: aqua;
+}
+
+fieldset input[type="submit"]:hover{
+    background-color: var(--Text-color);
+    border:2px solid var(--Text-color);
+    box-shadow: 0 0 10px var(--Text-color),
+    inset 0 0 10px var(--Text-color)
+}
