@@ -1,0 +1,22 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    
+}
+.header{
+    width: 500px;
+    height: 50px;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.content{
+    width: 490px;
+    height:450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
