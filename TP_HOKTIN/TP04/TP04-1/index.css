@@ -1,0 +1,94 @@
+#container{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: auto;
+}
+.Top{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.Letf-Top{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 6px;
+}
+.Box1{
+    width: 65px;
+    height: 65px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Right-Top{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 6px;
+}
+.Box2{
+    width: 65px;
+    height: 65px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Bottom{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.Letf-Bottom{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+.Box3{
+    width: 65px;
+    height: 65px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Right-Bottom{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 6px;
+}
+.Box4{
+    width: 65px;
+    height: 65px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

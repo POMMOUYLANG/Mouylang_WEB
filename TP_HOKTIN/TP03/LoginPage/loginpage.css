@@ -1,0 +1,156 @@
+#container{
+    width: 1500px;
+    height: 1000px;
+    margin: auto;
+    background-color: bisque;
+    border: 10px solid black;
+}
+.Left-Box{
+    float: left;
+    width: 750px;
+    height: 1000px;
+    background-color: white;
+}
+.box-top{
+    padding: 40px;
+    width: 750px;
+    height: 40px;
+    /* background-color: blanchedalmond; */
+}
+.box-down{
+    width: 750px;
+    height: 880px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-box{
+    width: 505px;
+    height: 700px;
+    /* background-color: bisque; */
+}
+.text-1{
+    font-size: 40px;
+}
+.text-2{
+    font-size: 24px;
+    color: rgba(199, 200, 217, 1);
+}
+.google{
+    width: 500px;
+    height: 50px;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-3{
+    font-size: 20px;
+}
+.line1{
+    float: left;
+    width: 235px;
+    height: 50px;
+    border-bottom: 2px solid gainsboro;
+}
+.line2{
+    float: right;
+    width: 235px;
+    height: 50px;
+    border-bottom: 2px solid gainsboro;
+}
+.or{
+    font-size: 23px;
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+.box{
+    width: 500px;
+    height: 60px;
+}
+form{
+    display: grid;
+    align-items: start;
+}
+#em{
+    font-size: 22px;
+}
+#iem{
+    font-size: 18px;
+    width: 470px;
+    height: 50px;
+    border: none;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+#pw{
+    font-size: 22px;
+}
+#ipw{
+    font-size: 18px;
+    width: 470px;
+    height: 50px;
+    border: none;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+#rem{
+    width: 26px;
+    height: 26px;
+    color: rgba(99, 58, 251, 1);
+}
+.rem{
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+.w-6.h-6{
+    position: relative;
+    left: 460px;
+    bottom: 40px;
+}
+.forget{
+    position: relative;
+    left: 200px;
+    bottom: 5px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(97, 58, 254, 1);
+}
+.sign-box{
+    width: 505px;
+    height: 60px;
+    background-color: rgba(97, 58, 254, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+}
+.sign{
+    font-size: 25px;
+}
+.last-text{
+    width: 505px;
+    height: 60px;
+    position: relative;
+    top: 50px;
+}
+.Right-Box{
+    float: right;
+    width: 750px;
+    height: 1000px;
+    background-color: white;
+}

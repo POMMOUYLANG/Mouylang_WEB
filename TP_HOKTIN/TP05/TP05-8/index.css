@@ -1,0 +1,29 @@
+#container{
+    width: 500px;
+    height: 400px;
+    background-color: gainsboro;
+    margin: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.drop1{
+    position: relative;
+    animation-name: name;
+    animation-duration: 2s;
+}
+.drop2{
+    position: relative;
+    animation-name: name;
+    animation-duration: 4s;
+}
+.drop3{
+    position: relative;
+    animation-name: name;
+    animation-duration: 6s;
+}  
+@keyframes name{
+    from{top: -250px;}
+    to {top: 10px;}
+}
