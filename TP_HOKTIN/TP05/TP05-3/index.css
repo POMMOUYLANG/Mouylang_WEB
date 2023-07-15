@@ -1,0 +1,19 @@
+#container{
+    width: 400px;
+    height: 400px;
+    background-color: gainsboro;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flying_box{
+    width: 200px;
+    height: 60px;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

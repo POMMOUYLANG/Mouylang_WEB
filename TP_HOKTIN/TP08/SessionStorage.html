@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage</title>
+    <script src="./tailwind.js"></script>
+</head>
+<body>
+    <div class="container m-auto border-4 border-black bg-gray-100 w-[700px] p-4">
+        <div class="text-center text-2xl font-bold">To-do List with SessionStorage</div>
+        <!-- Box gray -->
+        <div class="w-[100%] bg-gray-500 h-[100px] rounded-2xl mt-3 p-2">
+            <form action="" class="flex items-center">
+                <!-- Box1 -->
+                <div class="">
+                    <label for="">Task title</label>
+                    <input type="text" placeholder="Title" class="p-[6px] rounded-md pl-2">
+                </div>
+                <!-- Box2 -->
+                <div class="ml-[7px]">
+                    <label for="">Assingnee</label>
+                    <input type="text" placeholder="Name" class="p-[6px] rounded-md pl-2">
+                </div>
+                <!-- Box3 -->
+                <div class="mr-[20px]">
+                    <label for="">Dateline</label>
+                    <div class="p-[6px] rounded-md pl-2 border-2 h-[37px] bg-white flex justify-center items-center">
+                        <input type="date" placeholder="Title" class="border-2 border-gray-400 rounded-md">
+                    </div>
+                </div>
+                <!-- Add -->
+                <button onclick={alert(Hello)} class="bg-blue-500 w-20 p-2 h-9 mt-[22px] flex items-center justify-center rounded-md text-white border-2">Add</button>
+            </form>
+        </div>
+        <!-- row1 -->
+        <div class="w-[100%] border-2 border-gray-300 rounded-2xl flex justify-between p-2 mt-2">
+            <div class="">Create project</div>
+            <div class="">Create project</div>
+            <div class="">Create project</div>
+            <div class="w-[30px] flex justify-center items-center mr-[20px]">
+                <img src="./recycle-bin.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

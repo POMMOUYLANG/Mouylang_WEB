@@ -1,0 +1,125 @@
+#container{
+    width: 1400px;
+    height: 1400px;
+    margin: auto;
+    background-color: rgba(43, 138, 62, 1);
+    padding: 10px;
+}
+.Box-1{
+    width: 1300px;
+    height: 100px;
+    background-color: rgba(169, 209, 142, 1);
+    margin: 30px;
+    padding: 20px;
+}
+.text-1{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.Box-2{
+    width: 1300px;
+    height: 100px;
+    background-color: rgba(169, 209, 142, 1);
+    margin: 30px;
+    padding: 20px;
+}
+.text-2{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.Box-3{
+    width: 1335px;
+    height: 620px;
+    /* background-color: white; */
+    margin: 15px;
+    padding: 20px;
+}
+.text-3{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.text-4{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.left-box{
+    float: left;
+    width: 820px;
+    height: 630px;
+    background-color: rgba(169, 209, 142, 1);
+    
+}
+.inside-box{
+    width: 800px;
+    height: 300px;
+    padding: 40px;
+    display: grid;
+}
+.box-1{
+    width: 690px;
+    height: 80px;
+    background-color: rgba(226, 240, 217, 1);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.tet1{
+    font-size: 40px;
+    padding: 20px;
+}
+.box-2{
+    width: 690px;
+    height: 280px;
+    background-color: rgba(226, 240, 217, 1);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.tet2{
+    font-size: 40px;
+    padding: 20px;
+}
+.right-box{
+    float: right;
+    width: 460px;
+    height: 630px;
+    background-color: rgba(169, 209, 142, 1);
+    display: flex;
+    align-items: center;
+}
+.Box-4{
+    width: 1300px;
+    height: 100px;
+    background-color: rgba(169, 209, 142, 1);
+    margin: 30px;
+    padding: 20px;
+}
+.text-5{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.Box-5{
+    width: 1300px;
+    height: 100px;
+    background-color: rgba(169, 209, 142, 1);
+    margin: 30px;
+    padding: 20px;
+}
+.text-6{
+    font-size: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}

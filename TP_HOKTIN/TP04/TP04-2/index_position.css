@@ -1,0 +1,82 @@
+#container{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: auto;
+}
+.Top{
+    width: 600px;
+    height: 300px;
+}
+.Letf-Top{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    translate: 50px 20px;
+}
+.Box1{
+    width: 188px;
+    height: 65px;
+    background-color: orange;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+.Right-Top{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    translate: 350px -195px;
+}
+.Box2{
+    width: 65px;
+    height: 188px;
+    background-color: orange;
+    position: relative;
+    left: 6px;
+    top: 6px;
+}
+.Bottom{
+    width: 600px;
+    height: 300px;
+}
+.Letf-Bottom{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    translate: 45px 25px;
+}
+.Box3{
+    width: 188px;
+    height: 65px;
+    background-color: orange;
+    position: relative;
+    top: 70px;
+    left: 6px;
+}
+.Right-Bottom{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    translate: 355px -190px;
+}
+.Box4{
+    width: 65px;
+    height: 188px;
+    background-color: orange;
+    position: relative;
+    top: 6px;
+    left: 130px;
+}
+.p1{
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+.p2{
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 15px;
+}
