@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    .active{
+        background-color: rgba(228, 121, 121, 1);
+    }
+    .active:hover{
+        background-color: white;
+        color: rgba(228, 121, 121, 1);
+    }
+</style>
+<body>
+    <!-- container -->
+    <div class="container w-[400px] h-[810px] bg-white border-4 border-gray-200 m-auto p-[20px] rounded-2xl" title="Student Network">
+        <!-- Session1 -->
+        <div class="session1 flex justify-between">
+            <div class="text-lg">5:00 AM</div>
+            <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M1.371 8.143c5.858-5.857 15.356-5.857 21.213 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.06 0c-4.98-4.979-13.053-4.979-18.032 0a.75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182c4.1-4.1 10.749-4.1 14.85 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.062 0 8.25 8.25 0 00-11.667 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.204 3.182a6 6 0 018.486 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0 3.75 3.75 0 00-5.304 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182a1.5 1.5 0 012.122 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0l-.53-.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                  </svg>                        
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z" />
+                  </svg>                       
+                <div class="">99%</div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M3.75 6.75a3 3 0 00-3 3v6a3 3 0 003 3h15a3 3 0 003-3v-.037c.856-.174 1.5-.93 1.5-1.838v-2.25c0-.907-.644-1.664-1.5-1.837V9.75a3 3 0 00-3-3h-15zm15 1.5a1.5 1.5 0 011.5 1.5v6a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-6a1.5 1.5 0 011.5-1.5h15zM4.5 9.75a.75.75 0 00-.75.75V15c0 .414.336.75.75.75H18a.75.75 0 00.75-.75v-4.5a.75.75 0 00-.75-.75H4.5z" clip-rule="evenodd" />
+                  </svg>                                       
+            </div>
+        </div>  
+        <!-- Session2 -->
+        <div class="text-[20px] font-bold text-center mt-[10px] font-serif" style="color: rgba(228, 121, 121, 1);" title="SIGN UP FROM">SIGN UP FROM</div>
+        <div class="text-[10px] ml-[10px] mt-[10px] font-serif">PLAESE COMPLETE ALL INFORMATION BELOW</div>
+
+        <form action="">
+            <div class="ml-[10px] mt-[10px] grid gap-[4px]" title="FIRST NAME">
+                <div class="text-[14px] text-black font-bold font-serif">FIRST NAME :</div>
+                <input type="text" placeholder="FIRST NAME" required class="border-2 p-2 w-[330px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+            </div>
+            <div class="ml-[10px] mt-[10px] grid gap-[4px]" title="LAST NAME">
+                <div class="text-[14px] text-black font-bold font-serif">LAST NAME :</div>
+                <input type="text" placeholder="LAST NAME" required class="border-2 p-2 w-[330px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+            </div>
+            <div class="ml-[10px] flex gap-[48px] mt-[10px]" title="GENDER">
+                <div class="">
+                    <div class="text-[14px] font-bold font-serif">GENDER :</div>
+                    <div class="border-2 p-2 w-[140px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+                        <form action="">
+                            <select name="Gender" id="" class="w-[120px] text-black">
+                                <option value="none" class="border-[4px]">NONE</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Female">Other</option>
+                            </select>
+                      </form>
+                    </div>
+                </div>
+                <div class="" title="DATE">
+                    <div class="text-[14px] font-bold font-serif">DATE :</div>
+                    <input type="date" placeholder="DD/MM/YY" class="border-2 p-2 w-[140px] rounded-lg text-gray-400 text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+                </div>
+            </div>
+            <div class="ml-[10px] mt-[25px] relative bottom-[20px] grid gap-[4px]" title="EMAIL">
+                <div class="text-[14px] text-black font-bold font-serif">EMAIL :</div>
+                <input type="text" placeholder="EMIAL ADDRESS OR USERNAME" class="border-2 p-2 w-[330px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+            </div>
+            <div class="ml-[10px] mt-[10px] relative bottom-[20px] grid gap-[4px]" title="PASSWORD">
+                <div class="text-[14px] text-black font-bold font-serif">PASSWORD :</div>
+                <input type="password" placeholder="PASSWORD" class="border-2 p-2 w-[330px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+                <div class="relative left-[290px] bottom-[32px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 ">
+                        <path d="M3.53 2.47a.75.75 0 00-1.06 1.06l18 18a.75.75 0 101.06-1.06l-18-18zM22.676 12.553a11.249 11.249 0 01-2.631 4.31l-3.099-3.099a5.25 5.25 0 00-6.71-6.71L7.759 4.577a11.217 11.217 0 014.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113z" />
+                        <path d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0115.75 12zM12.53 15.713l-4.243-4.244a3.75 3.75 0 004.243 4.243z" />
+                        <path d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 00-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 016.75 12z" />
+                      </svg>
+                </div>   
+            </div>
+            <div class="ml-[10px] mt-[10px] relative bottom-[40px] grid gap-[4px]" title="CONFIRM PASSWORD">
+                <div class="text-[14px] text-black font-bold font-serif">CONFIRM PASSWORD :</div>
+                <input type="password" placeholder="CONFIRM PASSWORD" class="border-2 p-2 w-[330px] rounded-lg text-[14px] font-serif" style="border-color: rgba(228, 121, 121, 1);">
+                <div class="relative left-[290px] bottom-[32px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 ">
+                        <path d="M3.53 2.47a.75.75 0 00-1.06 1.06l18 18a.75.75 0 101.06-1.06l-18-18zM22.676 12.553a11.249 11.249 0 01-2.631 4.31l-3.099-3.099a5.25 5.25 0 00-6.71-6.71L7.759 4.577a11.217 11.217 0 014.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113z" />
+                        <path d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0115.75 12zM12.53 15.713l-4.243-4.244a3.75 3.75 0 004.243 4.243z" />
+                        <path d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 00-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 016.75 12z" />
+                      </svg>
+                </div>  
+                <a href="./LogIn.html"><div class="text-[12px] font-serif font-bold ml-[10px] hover:underline hover:text-pink-700" title="Back to login">Back to login</div></a>   
+            </div>
+            
+            <a href="./Home_Page.html">
+                <div class="active w-[150px] h-[55px] mt-[20px] rounded-2xl m-auto text-[20px] text-white flex justify-center items-center relative bottom-[30px] border-2 border-gray-100 font-serif" style="border: 2px solid rgba(228, 121, 121, 1);;" title="SIGN UP">SIGN UP</div>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

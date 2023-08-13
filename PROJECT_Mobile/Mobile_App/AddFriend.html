@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddFriend</title>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    .active{
+        background-color: rgba(228, 121, 121, 1);
+    }
+    .active:hover{
+        background-color: white;
+        color: rgba(228, 121, 121, 1);
+    }
+    .active-red{
+        background-color: rgb(255, 0, 0);
+    }
+    .active-red:hover{
+        background-color: white;
+        color: rgb(255, 0, 0);
+    }
+    .scrollerbar{
+        height: 670px; 
+        overflow-y: scroll;
+    }
+    .scrollerbar::-webkit-scrollbar{
+        display: none;
+    }
+</style>
+<body>
+    <!-- Container -->
+    <div class="container w-[400px] h-[810px] bg-white border-4 border-gray-200 m-auto p-[20px] rounded-2xl" title="Student Network">
+        <!-- Session1 -->
+        <div class="session1 flex justify-between">
+            <div class="text-lg">5:00 AM</div>
+            <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M1.371 8.143c5.858-5.857 15.356-5.857 21.213 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.06 0c-4.98-4.979-13.053-4.979-18.032 0a.75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182c4.1-4.1 10.749-4.1 14.85 0a.75.75 0 010 1.061l-.53.53a.75.75 0 01-1.062 0 8.25 8.25 0 00-11.667 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.204 3.182a6 6 0 018.486 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0 3.75 3.75 0 00-5.304 0 .75.75 0 01-1.06 0l-.53-.53a.75.75 0 010-1.06zm3.182 3.182a1.5 1.5 0 012.122 0 .75.75 0 010 1.061l-.53.53a.75.75 0 01-1.061 0l-.53-.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                  </svg>                        
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z" />
+                  </svg>                       
+                <div class="">99%</div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M3.75 6.75a3 3 0 00-3 3v6a3 3 0 003 3h15a3 3 0 003-3v-.037c.856-.174 1.5-.93 1.5-1.838v-2.25c0-.907-.644-1.664-1.5-1.837V9.75a3 3 0 00-3-3h-15zm15 1.5a1.5 1.5 0 011.5 1.5v6a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-6a1.5 1.5 0 011.5-1.5h15zM4.5 9.75a.75.75 0 00-.75.75V15c0 .414.336.75.75.75H18a.75.75 0 00.75-.75v-4.5a.75.75 0 00-.75-.75H4.5z" clip-rule="evenodd" />
+                  </svg>                                       
+            </div>
+        </div>
+        <!-- Session2 -->
+        <div class="session2 flex items-center justify-between relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
+                <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z" />
+                <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
+            </svg>  
+            <form action="">
+                <input type="text" placeholder="Search" class="w-[305px] h-[25px] bg-slate-200 rounded-lg p-[10px]" >
+                <div class="absolute right-[10px] top-[6px] ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-500">
+                        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+                      </svg>  
+                </div>
+            </form>
+        </div>
+        <div class="border-[1px] bg-gray-500 w-[392px] relative right-[20px] top-[3px]"></div>
+        <!-- Session3 -->
+        <div class="session3 h-[35px]">
+            <div class="flex gap-[58px] items-center mt-2">
+                <a href="./Home_Page.html" title="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" >
+                        <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                        <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                    </svg>  
+                </a>    
+                <a href="./AddFriend.html" title="Friend">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" style="color: rgba(228, 121, 121, 1); ">
+                        <path d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+                    </svg>
+                </a>
+                <a href="./Profile.html" title="Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="./Notification.html" title="Notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="./MoreMenu.html" title="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                      </svg> 
+                </a> 
+            </div>
+            <div class="h-[8px]">
+                <div class="w-[22px] border-[2px] relative left-[82px] top-[6px]" style="border-color: rgba(228, 121, 121, 1);"></div>
+                <div class="border-[1px] bg-gray-500 w-[392px] relative right-[20px] top-[5px]"></div>
+            </div>
+        </div>
+        <!-- Scroller -->
+        <div class="scrollerbar">
+            <!-- Seesion4 -->
+            <div class="session4 flex justify-between items-center mt-[8px]" title="Firend requests">
+                <div class="flex text-[14px] font-serif">Firend requests &nbsp; <p class="text-red-600">23+</p></div>
+                <div class="flex gap-[10px]" title="See all">
+                    <div class="text-[14px] font-serif">See all</div>
+                    <i class="fa-solid fa-user-plus" style="color: #000000;"></i>
+                </div>
+            </div>
+            <!-- Session5 -->
+            <div class="session5">
+                <!-- people1 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per1.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Soem Seakmeng">
+                            <div class="text-[14px] font-bold font-serif">Soem Seakmeng</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people2 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per2.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Teang Sreyroth">
+                            <div class="text-[14px] font-bold font-serif">Teang Sreyroth</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people3 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per3.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="To Volackangy">
+                            <div class="text-[14px] font-bold font-serif">To Volackangy</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people4 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per4.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Sorporn Sovortey">
+                            <div class="text-[14px] font-bold font-serif">Sorporn Sovor...</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people5 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per5.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Pin Seavmuy">
+                            <div class="text-[14px] font-bold font-serif">Pin Seavmuy</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people6 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per6.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Sam Sokreaksmey">
+                            <div class="text-[14px] font-bold font-serif">Sam Sokreak...</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people7 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per7.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Chab Sreylen">
+                            <div class="text-[14px] font-bold font-serif">Chab Sreylen</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people8 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per8.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Ang Ousa">
+                            <div class="text-[14px] font-bold font-serif">Ang Ousa</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people9 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per9.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Dic Pich">
+                            <div class="text-[14px] font-bold font-serif">Dic Pich</div>
+                            <div class="text-[12px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people10 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per10.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Leng Thida">
+                            <div class="text-[14px] font-bold font-serif">Leng Thida</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people11 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per11.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Se Lytheng">
+                            <div class="text-[14px] font-bold font-serif">Se Lytheng</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people12 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per12.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Ven Dara">
+                            <div class="text-[14px] font-bold font-serif">Ven Dara</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+                <!-- people13 -->
+                <div class="flex justify-between mt-[20px]">
+                    <div class="flex gap-[8px]">
+                        <div class="w-[45px] h-[45px] border-[2px] border-gray-200 rounded-full flex justify-center items-center">
+                            <img src="./Image/per13.png" width="50px" style="border-radius: 20px;" alt="">
+                        </div>
+                        <div class="" title="Sous Phearith">
+                            <div class="text-[14px] font-bold font-serif">Sous Phearith</div>
+                            <div class="text-[10px] text-gray-400">10 mutual friends</div>
+                        </div>
+                    </div>
+                    <div class="text-white flex gap-[4px]">
+                        <div class="active w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgba(228, 121, 121, 1);" title="Confirm">Confirm</div>
+                        <div class="active-red w-[80px] h-[30px] rounded-lg flex justify-center items-center text-[12px]" style="border: 2px solid rgb(255, 0, 0);" title="Delete">Delete</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
