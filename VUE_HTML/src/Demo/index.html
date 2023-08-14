@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic VueJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+</head>
+<style>
+    .box{
+        background-color: purple;
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<body>
+
+    <div class="app" id="app">
+        {{greeting}}
+        <input v-model="greeting"/> 
+
+        <hr />
+        <div v-show="isVisible" class="box"></div></div>
+    </div>
+
+
+    <script>
+        let app = Vue.createApp({
+            data: function(){
+                return{
+                    greeting: 'WELCOME TO VUE JS',
+                    isVisible: true
+                }
+            }
+        });
+        app.mount('#app')
+    </script>
+
+</body>
+</html>
