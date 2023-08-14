@@ -8,13 +8,22 @@
 
 </head>
 <body>
+
+    <div class="app" id="app">
+        <h1>Welcome To Vue JS </h1>
+        <img 
+            :class="gender" 
+            v-bind:src="picture" 
+            :alt="`${firstName} ${lastName}`"
+        />
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Email: {{email}} </h3>
+        <button :class="gender">Get Random User</button>
+    </div> 
+    
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/app.js"></script>
 
-    <div class="app" id="app">
-        
-    </div>
-    
-    
 </body>
 </html>
