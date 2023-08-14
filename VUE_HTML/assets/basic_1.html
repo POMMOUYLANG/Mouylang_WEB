@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic VueJS</title>
+    <link rel="icon" href="./Image/Vue.js_Logo_2.svg.png">
     <link rel="stylesheet" href="./css/app.css">
+    
 
 </head>
 <body>
@@ -18,7 +20,8 @@
         />
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}} </h3>
-        <button :class="gender">Get Random User</button>
+        <button v-on:click="getUser()" 
+            :class="gender">Get Random User</button>
     </div> 
     
     
