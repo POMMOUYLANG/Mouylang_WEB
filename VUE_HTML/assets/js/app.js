@@ -15,13 +15,20 @@ const app = Vue.createApp({
             const res = await fetch('https://randomuser.me/api')
             const {result} = await res.json()
 
-            console.log(result)
-            this.firstName = 'SAM',
-            this.lastName =  'Smith',
-            this.email = 'smithsam@gmail.com',
-            this.gender = 'Male',
-            this.picture = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnp100mRs3ONsl3K-RyfLGSHqFE-xBxuxeQ&usqp=CAU'
-            }
+            // console.log(result) 
+
+            // this.firstName = 'SAM',
+            // this.lastName =  'Smith',
+            // this.email = 'smithsam@gmail.com',
+            // this.gender = 'Male',
+            // this.picture = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnp100mRs3ONsl3K-RyfLGSHqFE-xBxuxeQ&usqp=CAU'
+            
+            this.firstName = result[0].name.first
+            this.lastName = result[0].name.last
+            this.email = result[0].email
+            this.gender = result[0].gender
+            this.picture = result[0].picture.large
+        },
     },
 })
 
