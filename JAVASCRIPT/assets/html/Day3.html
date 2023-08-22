@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day #3 JavaScript Operators</title>
+    <script src="../js/Day3.js"></script>
+</head>
+<body>
+    <h3>Arithmetic Operators</h3>
+    <p id="demo1"></p>
+    <button type="button" onclick="myfun()">Click Me</button>
+
+    <h3>Assignment Operators</h3>
+    <p id="demo2"></p>
+
+    <h3>Comparison Operators</h3>
+    <p id="demo3"></p>
+
+    <h3>String Operators</h3>
+    <p id="demo4"></p>
+
+    <h3>Logical Operators</h3>
+    <p id="demo5"></p>
+
+    <h3>Bitwise Operators</h3>
+    <p id="demo6"></p>
+
+    <h3>Ternary Operators</h3>
+    <p id="demo7"></p>
+
+    <h3>Type Operators</h3>
+    <p id="demo8"></p>
+
+    <script>
+        let x = 5;
+        x += 5;
+        document.getElementById("demo2").innerHTML = x;
+
+        let a1 = 5;
+        let a2 = 20;
+        let total = a2 > a1;
+        document.getElementById("demo3").innerHTML = "This is total = " + total;
+
+        var text1 = "Mouy";
+        var text2 = "Lang";
+        document.getElementById("demo4").innerHTML = text1 + " " + text2;
+
+        let x1 = 100;
+        x1 &= 5;
+        document.getElementById("demo5").innerHTML = "Valur : "+x1;
+    </script>
+</body>
+</html>
