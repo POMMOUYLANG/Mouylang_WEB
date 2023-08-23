@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day #7 JavaScript Strings Methods</title>
+</head>
+<body>
+    <!-- namevar.length() -->
+    <h3>JavaScript String Length:</h3>
+    <p id="demo1"></p>
+
+    <!-- 
+        slice(start, end)
+        substring(start, end)
+        substr(start, length)
+        replace();
+        replaceAll()
+     -->
+    <h3>Extracting String Parts:</h3>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo5">Please visit Microsoft!</p>
+
+    <h3>JavaScript String ReplaceAll()</h3>
+    <p id="demoall"></p>
+
+    <!-- 
+        A string is converted to upper case with toUpperCase():
+        A string is converted to lower case with toLowerCase(): 
+     -->
+     <h3>Converting to Upper and Lower Case</h3>
+     <button onclick="myUpperCase()">Click it one</button>
+     <p id="demo6">Hello World!</p>
+     <button onclick="myLowerCase()">Click it two</button>
+     <p id="demo7">Hello World!</p>
+
+    <!-- concat() joins two or more strings: -->
+    <h3>JavaScript String concat()</h3>
+    <p id="demo8"></p>
+
+    <!-- The trim() method removes whitespace from both sides of a string: -->
+    <h3>JavaScript String trim()</h3>
+    <p id="demo9"></p>
+
+    <!-- JavaScript String trimEnd() -->
+    <h3>JavaScript String trimEnd()</h3>
+     <p id="demo10"></p>
+
+    <!-- padStart() and padEnd() 
+        padStart() method pads a string from the start.
+    -->
+    <h3>JavaScript String Padding</h3>
+    <p id="demostart"></p>
+    <p id="demoend"></p>
+
+    <!-- 
+        charAt(position)
+        charCodeAt(position)
+        Property access [ ]
+     -->
+    <h3>Extracting String Characters</h3>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+
+     <!-- split() -->
+    <h3>JavaScript String split()</h3>
+    <p id="demo14"></p>
+
+
+    <script>
+        var z = "HELLO WORLD";
+        document.getElementById("demo11").innerHTML ="String charAt(): "+ z.charAt(0);
+
+        document.getElementById("demo12").innerHTML ="String charCodeAt(): "+ z.charCodeAt(0);
+
+        document.getElementById("demo13").innerHTML = z[0];
+
+        let text = "a,b,c,d,e,f";
+        const myArray = text.split(",");
+        document.getElementById("demo14").innerHTML = myArray[0];
+    </script>
+    <script src="../js/Day7.js"></script>
+</body>
+</html>
