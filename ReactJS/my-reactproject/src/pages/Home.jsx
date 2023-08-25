@@ -37,7 +37,7 @@ export default function Home() {
                       $500.00
                     </Typography>
                     <Typography gutterBottom variant="body2" component="div" sx={{color: "#ccd1d1"}}>
-                      Total Earning
+                      Total Earnings
                     </Typography>
                   </CardContent>
                 </Card>
