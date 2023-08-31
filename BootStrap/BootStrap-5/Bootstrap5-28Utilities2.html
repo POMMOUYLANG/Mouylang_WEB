@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>Visibility</h1>
+  <p>Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden to an element:</p>
+  <div class="visible bg-success">I am visible</div>
+  <div class="invisible bg-warning">I am invisible</div>
+</div>
+<div class="container mt-3">
+    <h1>Close Icon</h1>
+    <p>Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the times; symbol to create the actual icon (a better looking "x"). Also note that it is right-aligned by default:</p>
+    <div class="clearfix">
+      <button type="button" class="close">&times;</button>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <h2>Screen readers</h2>
+    <p>Use the .sr-only class to hide an element on all devices, except screen readers:</p>
+    <span class="">I will be hidden on all screens except for screen readers.</span>
+  </div>
+  <div class="container mt-3">
+    <h2>Contextual Colors</h2>
+    <p>Use the contextual classes to provide "meaning through colors":</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="text-primary">This text is important.</p>
+    <p class="text-success">This text indicates success.</p>
+    <p class="text-info">This text represents some information.</p>
+    <p class="text-warning">This text represents a warning.</p>
+    <p class="text-danger">This text represents danger.</p>
+    <p class="text-secondary">Secondary text.</p>
+    <p class="text-dark">This text is dark grey.</p>
+    <p class="text-body">Default body color (often black).</p>
+    <p class="text-light">This text is light grey (on white background).</p>
+    <p class="text-white">This text is white (on white background).</p>
+  </div>
+  <div class="container mt-3">
+    <h2>Contextual Link Colors</h2>
+    <a href="#" class="text-muted">Muted link.</a>
+    <a href="#" class="text-primary">Primary link.</a>
+    <a href="#" class="text-success">Success link.</a>
+    <a href="#" class="text-info">Info link.</a>
+    <a href="#" class="text-warning">Warning link.</a>
+    <a href="#" class="text-danger">Danger link.</a>
+    <a href="#" class="text-secondary">Secondary link.</a>
+    <a href="#" class="text-dark">Dark grey link.</a>
+    <a href="#" class="text-body">Body/black link.</a>
+    <a href="#" class="text-light">Light grey link.</a>
+  </div>
+  <div class="container mt-3">
+    <h2>Opacity Text Colors</h2>
+    <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+    <p class="text-black-50">Black text with 50% opacity on white background</p>
+    <p class="text-white-80 bg-dark">White text with 50% opacity on black background</p>
+  </div>
+  <div class="container mt-3">
+    <h2>Contextual Backgrounds</h2>
+    <p>Use the contextual background classes to provide "meaning through colors".</p>
+    <div class="bg-primary p-3"></div>
+    <div class="bg-success p-3"></div>
+    <div class="bg-info p-3"></div>
+    <div class="bg-warning p-3"></div>
+    <div class="bg-danger p-3"></div>
+    <div class="bg-secondary p-3"></div>
+    <div class="bg-dark p-3"></div>
+    <div class="bg-light p-3"></div>
+  </div>
+  <div class="container mt-3">
+    <h2>Background Color with Contrasting Text Color</h2>
+    <p class="text-bg-primary">This text is important.</p>
+    <p class="text-bg-success">This text indicates success.</p>
+    <p class="text-bg-info">This text represents some information.</p>
+    <p class="text-bg-warning">This text represents a warning.</p>
+    <p class="text-bg-danger">This text represents danger.</p>
+    <p class="text-bg-secondary">Secondary background color.</p>
+    <p class="text-bg-dark">Dark grey background color.</p>
+    <p class="text-bg-light">Light grey background color.</p>
+  </div>
+</body>
+</html>
