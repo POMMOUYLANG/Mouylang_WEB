@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./tailwind.js"></script>
+</head>
+<body>
+    <!-- <iframe class="w-full aspect-video ..." src="https://www.youtube.com/..."></iframe> -->
+    <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-after-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+      <br>
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-before-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+      <br>
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+      <span class="box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+      </span>
+      <br>
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+      </span>
+      <div>
+        When controlling the flow of text, using the CSS property
+        <span class="inline">display: inline</span>
+        will cause the text inside the element to wrap normally.
+      
+        While using the property <span class="inline-block">display: inline-block</span>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+      
+        Lastly, using the property <span class="block">display: block</span>
+        will put the element on its own line and fill its parent.
+      </div>
+      <div class="p-4">
+        <div class="flow-root ...">
+          <div class="my-4 ...">Well, let me tell you something, ...</div>
+        </div>
+        <div class="flow-root ...">
+          <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+        </div>
+      </div>
+</body>
+</html>
