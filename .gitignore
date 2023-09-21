@@ -24,3 +24,4 @@ hs_err_pid*
 
 /VUEJS/my-vueproject/node_modules
 /VUEJS/vue-meals-app/node_modules
+/VUEJS/todo-app/node_modules
