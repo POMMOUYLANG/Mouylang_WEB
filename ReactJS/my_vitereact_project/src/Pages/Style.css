@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: aliceblue;
+}
+
+a {
+  margin: 0 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 4rem;
+}
+
+nav {
+  padding: 1rem 15rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > img {
+  width: 170px;
+}
+nav > ul {
+  gap: 1rem;
+  display: flex;
+}
+nav li {
+  color: dodgerblue;
+  font-size: 2rem;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+nav li:hover {
+  color: rgb(0, 77, 154);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(31, 64, 86);
+  padding: 10rem 0;
+}
+footer p {
+  font-size: 2rem;
+  color: rgb(178, 237, 255);
+  text-align: center;
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-page > img {
+  width: 600px;
+}
+.nav-link {
+  margin: 3rem 0;
+}
+.nav-link a {
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+}
+.nav-link a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.user > a {
+  color: white;
+  background: rgb(79, 127, 143);
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+.user > span {
+  font-size: 1.7rem;
+  color: white;
+  background: rgb(79, 127, 143);
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+
+.user-detail {
+  background-color: rgb(75, 75, 75);
+  padding: 2rem;
+}
+.user-detail h3,
+.user-detail h4 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.user-detail a {
+  color: rgb(114, 201, 255);
+  border: 2px solid rgb(114, 201, 255);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
