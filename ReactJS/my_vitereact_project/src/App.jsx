@@ -6,6 +6,7 @@ import AboutLayout from "./Layouts/AboutLayout";
 import UserLayout from "./Layouts/UserLayout";
 import User, { UserLoader } from "./Pages/User/User";
 import UserDetail, { UserDetailLoader } from "./Pages/User/UserDetail";
+import UserErrorPage from "./Pages/User/UserErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,6 +51,7 @@ const router = createBrowserRouter([
           {
             path: ":id",
             element: <UserDetail />,
+            errorElement: <UserErrorPage />,
             loader: UserDetailLoader,
           },
         ],

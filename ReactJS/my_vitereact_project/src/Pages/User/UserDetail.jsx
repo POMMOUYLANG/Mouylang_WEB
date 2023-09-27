@@ -17,8 +17,10 @@ const UserDetail = () => {
 };
 export const UserDetailLoader = async ({ params }) => {
   const { id } = params;
-  console.log(id);
   const res = await fetch("https://jsonplaceholder.typicode.com/users/" + id);
+  if (!res.ok) {
+    throw new Error("Cannot find this user");
+  }
   return res.json();
 };
 export default UserDetail;
